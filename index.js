@@ -16,7 +16,9 @@ for (const arg of args) {
   const webpPath = svgPath.replace(path.extname(svgPath), '.webp');
 
   // svg to png
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox'],
+  });
   const page = await browser.newPage();
   await page.goto(pathToFileURL(svgPath).href, {
     waitUntil: 'load',
