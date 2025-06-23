@@ -1,0 +1,16 @@
+{
+  "name": "svg-to-webp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "negset",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^24.10.2",
+    "sharp": "^0.34.2"
+  },
+  "scripts": {
+    "conv": "node index.js"
+  }
+}
