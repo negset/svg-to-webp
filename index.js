@@ -29,7 +29,7 @@ for (const arg of args) {
   });
   await browser.close();
 
-  // png to svg
+  // png to webp
   await sharp(pngPath)
     .webp({
       nearLossless: true,
